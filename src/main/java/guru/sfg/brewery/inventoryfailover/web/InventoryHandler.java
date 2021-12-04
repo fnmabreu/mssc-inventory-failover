@@ -20,7 +20,7 @@ public class InventoryHandler {
 
     public Mono<ServerResponse> listInventory(ServerRequest request) {
         return ServerResponse.ok()
-                .contentType(MediaType.APPLICATION_NDJSON)
+                .contentType(MediaType.APPLICATION_STREAM_JSON)
                 .body(Mono.just(Arrays.asList(
                         BeerInventoryDto.builder()
                                 .id(UUID.randomUUID())
