@@ -15,6 +15,12 @@
     <name>mssc-inventory-failover</name>
     <description>Inventory Failover Service</description>
 
+    <properties>
+        <java.version>11</java.version>
+        <docker.image.prefix>fnmabreu</docker.image.prefix>
+        <docker.image.name>${project.artifactId}</docker.image.name>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
